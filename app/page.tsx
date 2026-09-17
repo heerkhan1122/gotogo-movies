@@ -142,7 +142,10 @@ export default function Home() {
                   {movie.year} • {movie.genre}
                 </p>
 
-                <button className="mt-4 w-full rounded-lg bg-red-600 py-2 text-sm font-semibold hover:bg-red-700">
+                <button
+  onClick={() => window.location.href = "/movie/" + encodeURIComponent(movie.title)}
+  className="mt-4 w-full rounded-lg bg-red-600 py-2 text-sm font-semibold hover:bg-red-700"
+>
                   View Movie
                 </button>
               </div>
