@@ -23,7 +23,7 @@ export default async function MoviePage({
           </h1>
 
           <p className="mt-4 text-zinc-400">
-            Movie details will appear here.
+            {movieTitle} is an exciting movie. Explore its story, characters and more.
           </p>
 
           <button className="mt-8 rounded-lg bg-red-600 px-6 py-3 font-semibold hover:bg-red-700">
