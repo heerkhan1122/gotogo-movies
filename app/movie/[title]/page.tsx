@@ -26,9 +26,9 @@ export default async function MoviePage({
             {movieTitle} is an exciting movie. Explore its story, characters and more.
           </p>
 
-          <button className="mt-8 rounded-lg bg-red-600 px-6 py-3 font-semibold hover:bg-red-700">
+          <a href={`https://www.justwatch.com/in/search?q=${encodeURIComponent(movieTitle)}`} target="_blank" rel="noopener noreferrer" className="mt-8 inline-block rounded-lg bg-red-600 px-6 py-3 font-bold">
             Watch Now
-          </button>
+          </a>
         </div>
       </div>
     </main>
