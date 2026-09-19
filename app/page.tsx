@@ -7,37 +7,37 @@ const movies = [
     title: "Avengers: Endgame",
     year: "2019",
     genre: "Action",
-    emoji: "🦸",
+    poster: "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
   },
   {
     title: "Interstellar",
     year: "2014",
     genre: "Sci-Fi",
-    emoji: "🚀",
+    poster: "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
   },
   {
     title: "Inception",
     year: "2010",
     genre: "Thriller",
-    emoji: "🌀",
+    poster: "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
   },
   {
     title: "Spider-Man",
     year: "2021",
     genre: "Action",
-    emoji: "🕷️",
+    poster: "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
   },
   {
     title: "The Batman",
     year: "2022",
     genre: "Action",
-    emoji: "🦇",
+    poster: "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
   },
   {
     title: "Avatar",
     year: "2009",
     genre: "Fantasy",
-    emoji: "🌌",
+    poster: "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
   },
 ];
 
@@ -127,7 +127,7 @@ export default function Home() {
             >
               <div className="flex h-40 items-center justify-center bg-gradient-to-br from-red-950 to-zinc-900 text-6xl">
                 <img
-  src={`https://placehold.co/600x900/1a1a1a/ffffff?text=${encodeURIComponent(movie.title)}`}
+  src={movie.poster || `https://placehold.co/600x900/1a1a1a/ffffff?text=${encodeURIComponent(movie.title)}`}
   alt={movie.title}
   className="w-full h-full object-cover"
 />
