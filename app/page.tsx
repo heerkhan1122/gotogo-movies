@@ -43,7 +43,7 @@ const movies = [
     title: "Chennai Love Story",
     year: "2026",
     genre: "Romance",
-    poster: "https://placehold.co/600x900/1a1a1a/ffffff?text=Chennai+Love+Story"
+            poster: "/posters/chennai-love-story.jpg",
   },
   {
   title: "Close to Me",

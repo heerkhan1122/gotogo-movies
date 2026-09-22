@@ -1,0 +1,36 @@
+export default async function MoviePage({
+  params,
+}: {
+  params: Promise<{ title: string }>;
+}) {
+  const { title } = await params;
+
+  const movieTitle = decodeURIComponent(title);
+
+  return (
+    <main className="min-h-screen bg-black px-6 py-10 text-white">
+      <a
+        href="/"
+        className="text-red-500 hover:text-red-400"
+      >
+        ← Back to Home
+      </a>
+
+      <div className="mx-auto mt-10 max-w-3xl">
+        <div className="rounded-2xl bg-zinc-900 p-8 shadow-xl">
+          <h1 className="text-4xl font-bold">
+            {movieTitle}
+          </h1>
+
+          <p className="mt-4 text-zinc-400">
+            {movieTitle} — Explore movie details, story, cast and where to watch.
+          </p>
+
+          <a href={`https://www.justwatch.com/in/search?q=${encodeURIComponent(movieTitle)}`} target="_blank" rel="noopener noreferrer" className="mt-8 inline-block rounded-lg bg-red-600 px-6 py-3 font-bold">
+            Watch Now
+          </a>
+        </div>
+      </div>
+    </main>
+  );
+}
