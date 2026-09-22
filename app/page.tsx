@@ -39,6 +39,60 @@ const movies = [
     genre: "Fantasy",
     poster: "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg",
   },
+    {
+    title: "Chennai Love Story",
+    year: "2026",
+    genre: "Romance",
+    poster: "https://placehold.co/600x900/1a1a1a/ffffff?text=Chennai+Love+Story"
+  },
+  {
+  title: "Close to Me",
+  year: "2025",
+  genre: "Drama",
+  poster: "https://placehold.co/600x900/1a1a1a/ffffff?text=Close+to+Me"
+}, 
+ {
+  title: "Awarapan 2",
+  year: "2026",
+  genre: "Romance",
+  poster: "https://placehold.co/600x900/1a1a1a/ffffff?text=Awarapan+2"
+},
+ {
+  title: "Ek Villain",
+  year: "2014",
+  genre: "Action",
+  poster: "https://placehold.co/600x900/1a1a1a/ffffff?text=Ek+Villain"
+},
+{
+  title: "Honeymoon Express",
+  year: "2024",
+  genre: "Romance",
+  poster: "https://placehold.co/600x900/1a1a1a/ffffff?text=Honeymoon+Express"
+},
+ {
+  title: "Lenin",
+  year: "2026",
+  genre: "Action",
+  poster: "https://placehold.co/600x900/1a1a1a/ffffff?text=Lenin"
+},
+ {
+  title: "Srinivasa Mangapuram",
+  year: "2026",
+  genre: "Drama",
+  poster: "https://placehold.co/600x900/1a1a1a/ffffff?text=Srinivasa+Mangapuram"
+},
+ {
+  title: "Liza, Liza, Skies Are Grey",
+  year: "2016",
+  genre: "Drama",
+  poster: "https://placehold.co/600x900/1a1a1a/ffffff?text=Liza+Liza"
+},
+ {
+  title: "Heartin",
+  year: "2026",
+  genre: "Romance",
+  poster: "https://placehold.co/600x900/1a1a1a/ffffff?text=Heartin"
+},
 ];
 
 export default function Home() {
